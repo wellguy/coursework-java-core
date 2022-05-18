@@ -16,7 +16,9 @@
 После реализации этого класса нужно [написать на него тесты](https://github.com/netology-code/pcs-javacore/blob/main/src/test/java/ru/netology/javacore/TodosTests.java) на основе JUnit 5, минимум 3 штуки, тестирующие его в разных сценариях. Для этого не забудьте подключить зависимость в проект (`org.junit.jupiter:junit-jupiter:5.7.0`). Перед отправкой проекта обязательно убедитесь, что тесты проходят.
 
 # Сервер
-Ваша программа должна принимать запросы на добавление или удаление задач из списка через сервер. Сервер создаётя и запускается в [классе Main](https://github.com/netology-code/pcs-javacore/blob/main/src/main/java/ru/netology/javacore/Main.java), его менять нельзя. Реализацию же самому [классу сервера](https://github.com/netology-code/pcs-javacore/blob/main/src/main/java/ru/netology/javacore/TodoServer.java) вам предстоит написать самим. После старта, он должен в бесконечном цикле принимать подключения и считывать с них одну строку, в которой будет располагаться json вида:
+Ваша программа должна принимать запросы на добавление или удаление задач из списка через сервер. Сервер создаётя и запускается в [классе Main](https://github.com/netology-code/pcs-javacore/blob/main/src/main/java/ru/netology/javacore/Main.java), 
+его менять нельзя. Реализацию же самому [классу сервера](https://github.com/netology-code/pcs-javacore/blob/main/src/main/java/ru/netology/javacore/TodoServer.java) 
+вам предстоит написать самим. После старта, он должен в бесконечном цикле принимать подключения и считывать с них одну строку, в которой будет располагаться json вида:
 ```json
 { "type": "ADD", "task": "Название задачи" }
 ```
