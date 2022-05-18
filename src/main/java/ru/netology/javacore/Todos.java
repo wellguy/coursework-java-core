@@ -28,7 +28,7 @@ public class Todos {
         String[] array = new String[taskList.size()];
         taskList.toArray(array);
         Arrays.sort(array);
-        for(String task : array) {
+        for (String task : array) {
             sb.append(task + " ");
         }
         return sb.toString();

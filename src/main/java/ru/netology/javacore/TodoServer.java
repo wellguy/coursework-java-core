@@ -31,8 +31,6 @@ public class TodoServer {
                 System.out.printf("New connection accepted\n");
                 final String connamd = in.readLine();
 
-                //Gson gson = new Gson();
-                //todos = gson.fromJson(connamd, Todos.class);
                 final JsonParser parser = new JsonParser();
                 final JsonElement element = parser.parse(connamd);
                 final JsonObject jsonObject = element.getAsJsonObject();
@@ -40,7 +38,7 @@ public class TodoServer {
                 final String task = jsonObject.get("task").getAsString();
 
 
-                if (type.equals("ADD")){
+                if (type.equals("ADD")) {
                     todos.addTask(task);
                 } else if (type.equals("REMOVE")) {
                     todos.removeTask(task);
@@ -52,9 +50,6 @@ public class TodoServer {
                 e.printStackTrace();
             }
         }
-
-
-
 
 
     }
