@@ -1,7 +1,7 @@
 # Менеджер задач
 
 # TODOs
-Центральным для логики программы компонентом [класс Todos](https://github.com/wellguy/coursework-java-core/blob/main/src/main/java/ru/netology/javacore/Todos.java). Объект этого класса содержит в себе набор задач, добавленных в систему. 
+Центральный для логики программы компонентом является [класс Todos](https://github.com/wellguy/coursework-java-core/blob/main/src/main/java/ru/netology/javacore/Todos.java). Объект этого класса содержит в себе набор задач, добавленных в систему. 
 
 Каждая задача представляет собой обычное значение типа `String`. Например: `"Сходить в магазин"`, `"Пойти на пробежку"`. 
 
